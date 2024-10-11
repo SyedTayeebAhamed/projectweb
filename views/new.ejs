@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Product</title>
+  </head>
+  <body>
+    <h1>Enter the new Products</h1>
+    <form action="/product" method="POST">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        placeholder="Enter the Product"
+        id="name"
+      /><br />
+      <label for="price">Price</label>
+      <input
+        type="number"
+        name="price"
+        placeholder="Enter the Price"
+        id="price"
+      /><br />
+      <label for="pet-select">Choose a Category</label>
+      <select name="category" id="pet-select">
+        <option value="">--Please choose an option--</option>
+        <option value="fruit">fruit</option>
+        <option value="vegatable">vegatable</option>
+        <option value="dairy">dairy</option>
+      </select>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
