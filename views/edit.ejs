@@ -24,16 +24,12 @@
         id="price"
         value="<%=foundproduct.price  %>"
       /><br />
-      <label for="pet-select">Choose a Category</label>
-      <select
-        name="category"
-        id="pet-select"
-        value="<%=foundproduct.category %>"
-      >
+      <label for="cat">Choose a Category</label>
+      <select name="category" id="cat" value="<%=foundproduct.category %>">
         <option value="">--Please choose an option--</option>
-        <option value="fruit" <%=foundproduct.category==="fruit"?"selected":""%>>fruit</option>
-        <option value="vegatable" <%=foundproduct.category==="vegatable"?"selected":""%>>vegatable</option>
-        <option value="dairy" <%=foundproduct.category==="dairy"?"selected":""%>>dairy</option>
+        <option value="fruit">fruit</option>
+        <option value="vegatable">vegatable</option>
+        <option value="dairy">dairy</option>
       </select>
       <input type="submit" />
     </form>
